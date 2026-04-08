@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="ЕстьФайлы" id="49">
+					<DataPath>Список.ЕстьФайлы</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ЕстьФайлыКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="51"/>
+				</PictureField>
+				<LabelField name="Дата" id="18">
+					<DataPath>Список.Дата</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="20"/>
+				</LabelField>
+				<PictureField name="Индикатор" id="37">
+					<DataPath>Список.Индикатор</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во договоров табличной части</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа Записан(нет цвета), Проведён(зеленый), Помечен на удаление(красный)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.Градация</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ИндикаторКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ИндикаторРасширеннаяПодсказка" id="39"/>
+				</PictureField>
+				<LabelField name="Номер" id="22">
+					<DataPath>Список.Номер</DataPath>
+					<ContextMenu name="НомерКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="НачалоДействия" id="40">
+					<DataPath>Список.НачалоДействия</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вторая дата</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вторая по величине дата начала действия договора среди договоров табличной части</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="НачалоДействияКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="НачалоДействияРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+				<LabelField name="СтатусДокумента" id="43">
+					<DataPath>Список.СтатусДокумента</DataPath>
+					<ContextMenu name="СтатусДокументаКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="СтатусДокументаРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+				<LabelField name="Ссылка" id="46">
+					<DataPath>Список.Ссылка</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="48"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВедомостьДоговоры.Ссылка КАК Ссылка,
+	КОЛИЧЕСТВО(ВедомостьДоговоры.Договор) КАК Количество
+ПОМЕСТИТЬ ВТКоличество
+ИЗ
+	Документ.Ведомость.Договоры КАК ВедомостьДоговоры
+
+СГРУППИРОВАТЬ ПО
+	ВедомостьДоговоры.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВедомостьДоговоры.Ссылка КАК Ссылка,
+	МИНИМУМ(Договоры.НачалоДействия) КАК МинимальнаяДата
+ПОМЕСТИТЬ ВТМинДата
+ИЗ
+	Документ.Ведомость.Договоры КАК ВедомостьДоговоры
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Договоры КАК Договоры
+		ПО ВедомостьДоговоры.Договор = Договоры.Ссылка
+ГДЕ
+	Договоры.НачалоДействия &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+
+СГРУППИРОВАТЬ ПО
+	ВедомостьДоговоры.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВедомостьДоговоры.Ссылка КАК Ссылка,
+	МИНИМУМ(Договоры.НачалоДействия) КАК НачалоДействия
+ПОМЕСТИТЬ ВТНужнаяДата
+ИЗ
+	Документ.Ведомость.Договоры КАК ВедомостьДоговоры
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТМинДата КАК ВТМинДата
+		ПО ВедомостьДоговоры.Ссылка = ВТМинДата.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Договоры КАК Договоры
+		ПО ВедомостьДоговоры.Договор = Договоры.Ссылка
+			И (Договоры.НачалоДействия &lt;&gt; ДАТАВРЕМЯ(1, 1, 1))
+ГДЕ
+	ВТМинДата.МинимальнаяДата &lt;&gt; Договоры.НачалоДействия
+
+СГРУППИРОВАТЬ ПО
+	ВедомостьДоговоры.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДокументВедомость.Ссылка КАК Ссылка,
+	ДокументВедомость.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументВедомость.Номер КАК Номер,
+	ДокументВедомость.Дата КАК Дата,
+	ДокументВедомость.Проведен КАК Проведен,
+	ДокументВедомость.Литеры КАК Литеры,
+	ДокументВедомость.ДоговорыСтрокой КАК ДоговорыСтрокой,
+	ДокументВедомость.ДоговорыТаблицей КАК ДоговорыТаблицей,
+	ДокументВедомость.Ответственный КАК Ответственный,
+	ДокументВедомость.Иконки КАК Иконки,
+	ДокументВедомость.Договоры.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Договор КАК Договор
+	) КАК Договоры,
+	ДокументВедомость.МоментВремени КАК МоментВремени,
+	ВТНужнаяДата.НачалоДействия КАК НачалоДействия,
+	ВТКоличество.Количество КАК Количество,
+	ВЫБОР
+		КОГДА ВТКоличество.Количество ЕСТЬ NULL
+			ТОГДА ВЫБОР
+					КОГДА ДокументВедомость.Проведен
+						ТОГДА 5
+					КОГДА ДокументВедомость.ПометкаУдаления
+						ТОГДА 0
+					ИНАЧЕ 10
+				КОНЕЦ
+		КОГДА ВТКоличество.Количество &lt; 3
+			ТОГДА ВЫБОР
+					КОГДА ДокументВедомость.Проведен
+						ТОГДА 6
+					КОГДА ДокументВедомость.ПометкаУдаления
+						ТОГДА 1
+					ИНАЧЕ 11
+				КОНЕЦ
+		КОГДА ВТКоличество.Количество &lt; 6
+			ТОГДА ВЫБОР
+					КОГДА ДокументВедомость.Проведен
+						ТОГДА 7
+					КОГДА ДокументВедомость.ПометкаУдаления
+						ТОГДА 2
+					ИНАЧЕ 12
+				КОНЕЦ
+		КОГДА ВТКоличество.Количество &lt;= 10
+			ТОГДА ВЫБОР
+					КОГДА ДокументВедомость.Проведен
+						ТОГДА 8
+					КОГДА ДокументВедомость.ПометкаУдаления
+						ТОГДА 3
+					ИНАЧЕ 13
+				КОНЕЦ
+		КОГДА ВТКоличество.Количество &gt; 10
+			ТОГДА ВЫБОР
+					КОГДА ДокументВедомость.Проведен
+						ТОГДА 9
+					КОГДА ДокументВедомость.ПометкаУдаления
+						ТОГДА 4
+					ИНАЧЕ 14
+				КОНЕЦ
+	КОНЕЦ КАК Индикатор,
+	ДокументВедомость.СтатусДокумента КАК СтатусДокумента,
+	НаличиеФайлов.ЕстьФайлы КАК ЕстьФайлы
+ИЗ
+	Документ.Ведомость КАК ДокументВедомость
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТНужнаяДата КАК ВТНужнаяДата
+		ПО (ВТНужнаяДата.Ссылка = ДокументВедомость.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТКоличество КАК ВТКоличество
+		ПО ДокументВедомость.Ссылка = ВТКоличество.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
+		ПО ДокументВедомость.Ссылка = НаличиеФайлов.ОбъектСФайлами</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Договоры</dcssch:dataPath>
+					<dcssch:field>Договоры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Литеры</dcssch:dataPath>
+					<dcssch:field>Литеры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоговорыСтрокой</dcssch:dataPath>
+					<dcssch:field>ДоговорыСтрокой</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ответственный</dcssch:dataPath>
+					<dcssch:field>Ответственный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоговорыТаблицей</dcssch:dataPath>
+					<dcssch:field>ДоговорыТаблицей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Иконки</dcssch:dataPath>
+					<dcssch:field>Иконки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Договоры.Ссылка</dcssch:dataPath>
+					<dcssch:field>Договоры.Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Договоры.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Договоры.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Договоры.Договор</dcssch:dataPath>
+					<dcssch:field>Договоры.Договор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НачалоДействия</dcssch:dataPath>
+					<dcssch:field>НачалоДействия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Количество</dcssch:dataPath>
+					<dcssch:field>Количество</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Индикатор</dcssch:dataPath>
+					<dcssch:field>Индикатор</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индикатор</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусДокумента</dcssch:dataPath>
+					<dcssch:field>СтатусДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Менеджер</dcssch:dataPath>
+					<dcssch:field>Менеджер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕстьФайлы</dcssch:dataPath>
+					<dcssch:field>ЕстьФайлы</dcssch:field>
+				</Field>
+				<MainTable>Document.Ведомость</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>Document.Ведомость.Command.ОтправитьНаПочту</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>
