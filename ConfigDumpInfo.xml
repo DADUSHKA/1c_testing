@@ -2816,11 +2816,12 @@
 		<Metadata name="DefinedType.ПрисоединенныйФайл" id="bef6081e-f377-41d6-83a1-b0e218a3fb46" configVersion="5f53aeedcd7a30428c9a95838a622f0000000000"/>
 		<Metadata name="DefinedType.ПрисоединенныйФайлОбъект" id="9b67bfd5-ef23-4205-b7ba-9466517e9999" configVersion="efdc48e71ec85f4b88c433a7716f729600000000"/>
 		<Metadata name="DefinedType.ФизическоеЛицо" id="46b0a5b3-1fa7-44ff-a941-c6de47d36e77" configVersion="5d3476c8e55ed847b619dfd816a64a8800000000"/>
-		<Metadata name="Document.Ведомость" id="ec54b4f0-dfe4-4a39-a78f-6896ad1e6331" configVersion="329750997b312849b63a41af60bd28bb00000000">
+		<Metadata name="Document.Ведомость" id="ec54b4f0-dfe4-4a39-a78f-6896ad1e6331" configVersion="036c1571fb3ad847a9a5117738736d7f00000000">
 			<Metadata name="Document.Ведомость.Attribute.ДоговорыСтрокой" id="266247e0-e7e1-4d95-b95b-e00b0ad1f8b7"/>
 			<Metadata name="Document.Ведомость.Attribute.Ответственный" id="628c58f5-ad5f-4303-992e-f6ffe53e5a8d"/>
 			<Metadata name="Document.Ведомость.Attribute.ДоговорыТаблицей" id="754d4e44-c678-4715-b533-6a2512e78e1f"/>
 			<Metadata name="Document.Ведомость.TabularSection.Договоры.Attribute.Договор" id="80a67fc4-a865-4fb1-adb5-512a10008f04"/>
+			<Metadata name="Document.Ведомость.Attribute.РеквизитДляТеста" id="822467a6-fae7-4acd-828d-0ebd79e293d6"/>
 			<Metadata name="Document.Ведомость.Command.ПечатьДоговоров" id="975080c8-c4f5-416a-a66b-1642eda55d6e"/>
 			<Metadata name="Document.Ведомость.Attribute.Менеджер" id="9b5f71b4-e5b1-4475-ad60-3589c75b1c98"/>
 			<Metadata name="Document.Ведомость.Attribute.СтатусДокумента" id="b50c587d-654e-415a-8c5d-f9c56cc0c766"/>
