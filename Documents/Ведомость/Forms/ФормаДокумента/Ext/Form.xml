@@ -248,6 +248,7 @@
 										<ExtendedTooltip name="ДоговораУправлениеПоискомРасширеннаяПодсказка" id="146"/>
 									</SearchControlAddition>
 									<Events>
+										<Event name="BeforeEditEnd">ДоговораПередОкончаниемРедактирования</Event>
 										<Event name="ChoiceProcessing">ДоговораОбработкаВыбора</Event>
 									</Events>
 									<ChildItems>
@@ -257,9 +258,6 @@
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ДоговораДоговорКонтекстноеМеню" id="151"/>
 											<ExtendedTooltip name="ДоговораДоговорРасширеннаяПодсказка" id="152"/>
-											<Events>
-												<Event name="ChoiceProcessing">ДоговораДоговорОбработкаВыбора</Event>
-											</Events>
 										</InputField>
 									</ChildItems>
 								</Table>
