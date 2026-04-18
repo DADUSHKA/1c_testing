@@ -29,9 +29,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаОтбораВедомастейПоДатам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЖурналРегистрации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаТестоваяДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">11c517d8-3285-41c9-8dea-184d2a13adb8</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеОтчетыИОбработки</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">45dce4c0-9cd6-4d07-803a-ab5bace734d3</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
