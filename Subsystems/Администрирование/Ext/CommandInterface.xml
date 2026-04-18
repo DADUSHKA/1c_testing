@@ -23,7 +23,7 @@
 		</Command>
 		<Command name="Catalog.ДополнительныеОтчетыИОбработки.StandardCommand.OpenList">
 			<Visibility>
-				<xr:Common>false</xr:Common>
+				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ПанельАдминистрированияБСП.Command.Обслуживание">

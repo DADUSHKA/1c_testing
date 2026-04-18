@@ -1244,6 +1244,8 @@
 			<DataProcessor>РезультатыОбновленияПрограммы</DataProcessor>
 			<DataProcessor>РекомендацияПоПовышениюСкоростиРаботы</DataProcessor>
 			<DataProcessor>Сканирование</DataProcessor>
+			<DataProcessor>ОбработкаТестоваяДоговора</DataProcessor>
+			<DataProcessor>ВыгрузкаМетаданных</DataProcessor>
 			<InformationRegister>АдминистративнаяИерархия</InformationRegister>
 			<InformationRegister>ВедомостьДоговоров</InformationRegister>
 			<InformationRegister>АдресныеОбъекты</InformationRegister>
