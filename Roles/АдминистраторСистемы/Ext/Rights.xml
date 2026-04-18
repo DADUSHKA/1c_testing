@@ -340,17 +340,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ВыгрузкаМетаданных</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ПричиныИзмененияАдресныхСведений</name>
 		<right>
 			<name>Read</name>

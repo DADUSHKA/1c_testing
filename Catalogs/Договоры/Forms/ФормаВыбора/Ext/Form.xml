@@ -6,6 +6,11 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<Button name="СоздатьКопию" id="31">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СоздатьКопию</CommandName>
+			<ExtendedTooltip name="СоздатьКопиюРасширеннаяПодсказка" id="32"/>
+		</Button>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
 				<v8:item>
@@ -136,4 +141,21 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="СоздатьКопию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать копию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать копию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьКопию</Action>
+		</Command>
+	</Commands>
 </Form>
